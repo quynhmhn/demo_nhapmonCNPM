@@ -1,0 +1,31 @@
+app:
+  datasource:
+    url: "jdbc:postgresql://localhost/postgres"
+    username: "postgres"
+    password: "123456"
+    hikari-config:
+      pool-name: app-pool
+      maximum-pool-size: 30
+      minimum-idle: 5
+
+spring:
+  redis:
+    server: 27.71.226.237
+    port: 9107
+    password: Tm5@P@ssw0rd
+
+logging:
+  level:
+    com.tms: info
+
+level :
+  level-mapping : 2
+
+inmemory:
+  datasource:
+    jdbcUrl: "jdbc:sqlite::memory:"
+    username: "sa"
+    password: "sa"
+    pool-name: memory-pool
+    maximum-pool-size: 30
+    minimum-idle: 5
